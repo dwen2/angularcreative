@@ -1,0 +1,156 @@
+html {
+  background-color: #5FCF80;
+}
+
+.container {
+  text-align: center;
+}
+
+input[type='checkbox'] {
+  transform: scale(2);
+  margin: 20px;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #5FCF80;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 3vw auto 3vw auto;
+  display: block;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+button, input:focus {
+  outline: none !important;
+}
+
+.box {
+  margin: 20px auto;
+  background: #5FCF80;
+  width: 150px;
+  height: 150px;
+}
+
+.circle {
+  transform: rotate(360deg);
+  background: #9351A6;
+  border-radius: 50%;
+  margin: 20px auto;
+  width: 150px;
+  height: 150px;
+}
+
+.rotate {
+  transition: all 1s ease-in-out;
+}
+
+#caption {
+  text-align: center;
+  font-family: 'Handlee', cursive;
+}
+
+body { 
+  background: url('http://kevinchassagne.com/assets/images/template/sidebar.png'); 
+}
+
+.center, .a {
+  text-align: center;
+  margin: 15% auto;
+  width: 50%;
+}
+
+.center input[type="checkbox"] {
+  position: relative;
+  display: inline-block;
+  min-height: 17px;
+  width: 30%;
+  background: #5FCF80;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+.center input[type="checkbox"]:after { 
+  content: ''; 
+  font-size: 2em;
+  text-align: center;
+  line-height: 70px;
+  color: #555555;
+  position: absolute;
+  margin: auto auto;
+  left: 0; right: 0; bottom: 0; top: 0;
+  display: block;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+  transition: all 0.3s ease-out;
+ }
+
+.center input[type="checkbox"]:before { 
+  position: absolute;
+  margin: auto auto;
+  left: 0; right: 0; bottom: 0; top: 0;
+  content: '';
+  display: block; 
+  height: 80px;
+  width: 80px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: all 0.1s ease-in;
+}
+
+.center input[type="checkbox"]:hover:before {
+  height: 60px;
+  width: 60px;
+}
+
+.center input[type="checkbox"]:checked:before {
+  height: 100%;
+  width: 100%;
+  background: #dd3455;
+  border: none;
+  border-radius: 0;
+}
+
+.center input[type="checkbox"]:focus {
+  outline: none;
+}
+
+.center input[type="checkbox"].a:after { content: 'Yes?'; } 
+.center input[type="checkbox"]:checked:after { content: '✓'; } 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Angular Showcase</title>
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div ng-app="myApp" ng-controller="MainCtrl">
+        <div id="caption">
+            <h1>Seek ?</h1>
+            <div class="center">
+                <input type="checkbox" class="a" name="a" ng-model="myCheck" />
+            </div>
+        </div>
+        <div id="hide" ng-hide="!myCheck">
+            <button class="button" ng-click="myFunc()"><span>Click Me!</span></button>
+            <div ng-show="showMe">
+                <div class="center">
+                    <input type="checkbox" class="a" name="a" ng-model="boxClass" />
+                </div>
+                <div class="box rotate" ng-class="{'box': boxClass, 'circle': !boxClass} "></div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+
+</body>
+
+</html>
