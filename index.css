@@ -20,7 +20,7 @@ input[type='checkbox'] {
   font-size: 28px;
   padding: 20px;
   width: 200px;
-  transition: all 0.5s;
+  transition: all 0.8s;
   cursor: pointer;
   margin: 3vw auto 3vw auto;
   display: block;
@@ -30,7 +30,7 @@ input[type='checkbox'] {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 
 .button span:after {
@@ -39,7 +39,7 @@ input[type='checkbox'] {
   opacity: 0;
   top: 0;
   right: -20px;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 
 .button:hover span {
@@ -75,7 +75,7 @@ button, input:focus {
   transition: all 1s ease-in-out;
 }
 
-#caption {
+.caption {
   text-align: center;
   font-family: 'Handlee', cursive;
 }
